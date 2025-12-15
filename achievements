@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Achievements</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color:white;
+        }
+
+        h1{
+            text-align:center;
+            margin-top:40px;
+            letter-spacing:1px;
+        }
+
+        .underline{
+            width:70px;
+            height:4px;
+            background:#1abc9c;
+            margin:12px auto 45px;
+            border-radius:10px;
+        }
+
+        .achievements-container{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            padding:20px 40px;
+            flex-wrap:wrap;
+        }
+
+        .achievement-card{
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            width:320px;
+            padding:25px;
+            border-radius:20px;
+            box-shadow:0 12px 30px rgba(0,0,0,0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .achievement-card:hover{
+            transform: translateY(-10px);
+            box-shadow:0 18px 40px rgba(0,0,0,0.6);
+        }
+
+        .achievement-card h2{
+            color:#1abc9c;
+            margin-bottom:10px;
+        }
+
+        .achievement-card p{
+            font-size:15px;
+            line-height:1.6;
+        }
+
+        button{
+            margin:45px auto;
+            display:block;
+            padding:12px 30px;
+            font-size:16px;
+            border:none;
+            border-radius:30px;
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            color:white;
+            cursor:pointer;
+        }
+
+        button:hover{
+            box-shadow:0 6px 20px rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Achievements</h1>
+    <div class="underline"></div>
+
+    <div class="achievements-container">
+
+        <!-- Achievement 1 -->
+        <div class="achievement-card">
+            <h2>Blockchain Basics </h2>
+            <p>
+                Successfully completed a workshop on
+                <b>Blockchain Basics</b>, gaining knowledge of
+                decentralized systems, smart contracts, and security.
+            </p>
+        </div>
+
+        <!-- Achievement 2 -->
+        <div class="achievement-card">
+            <h2>Computer Hardware Certification</h2>
+            <p>
+                Certified in <b>Computer Hardware</b>, covering
+                system components, troubleshooting, assembly,
+                and maintenance of computer systems.
+            </p>
+        </div>
+
+        <!-- Achievement 3 -->
+        <div class="achievement-card">
+            <h2>Academic Achievement</h2>
+            <p>
+                Demonstrated consistent academic performance in
+                Computer Science with strong understanding of
+                programming and system concepts.
+            </p>
+        </div>
+
+        <!-- Achievement 4 -->
+        <div class="achievement-card">
+            <h2>Technical Workshops</h2>
+            <p>
+                Participated in multiple technical workshops and
+                seminars to enhance practical knowledge and
+                industry exposure.
+            </p>
+        </div>
+
+    </div>
+
+    <button onclick="goBack()">Back</button>
+
+    <script>
+        function goBack(){
+            window.location.href = "first.html";
+        }
+    </script>
+
+</body>
+</html>
