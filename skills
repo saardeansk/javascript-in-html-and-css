@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technical Skills</title>
+<style>
+    body{
+        margin:0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color:#ffffff;
+    }
+
+    h1{
+        text-align:center;
+        margin-top:40px;
+        letter-spacing:1px;
+    }
+
+    .underline{
+        width:70px;
+        height:4px;
+        background:#1abc9c;
+        margin:12px auto 45px;
+        border-radius:10px;
+    }
+
+    .skills-container{
+        display:flex;
+        justify-content:center;
+        gap:30px;
+        padding:20px 40px;
+        flex-wrap:wrap;
+    }
+
+    .card{
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px);
+        width:300px;
+        padding:30px;
+        border-radius:20px;
+        box-shadow:0 12px 30px rgba(0,0,0,0.4);
+        text-align:center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover{
+        transform: translateY(-10px);
+        box-shadow:0 18px 40px rgba(0,0,0,0.6);
+    }
+
+    .card h2{
+        color:#1abc9c;
+        margin-bottom:25px;
+    }
+
+    .skills{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:14px;
+    }
+
+    .skill{
+        background: linear-gradient(135deg, #1abc9c, #16a085);
+        color:white;
+        padding:10px 18px;
+        border-radius:25px;
+        font-size:14px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        cursor:default;
+    }
+
+    .skill:hover{
+        transform: scale(1.1);
+        box-shadow:0 5px 15px rgba(0,0,0,0.4);
+    }
+
+    button{
+        margin:45px auto;
+        display:block;
+        padding:12px 30px;
+        font-size:16px;
+        border:none;
+        border-radius:30px;
+        background: linear-gradient(135deg, #1abc9c, #16a085);
+        color:white;
+        cursor:pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    button:hover{
+        transform: scale(1.05);
+        box-shadow:0 6px 20px rgba(0,0,0,0.4);
+    }
+</style>
+
+</head>
+
+<body>
+
+    <h1>Technical Skills</h1>
+    <div class="underline"></div>
+
+    <div class="skills-container">
+
+        <!-- Core Competencies -->
+        <div class="card">
+            <h2>Core Competencies</h2>
+            <div class="skills">
+                <div class="skill">Full Stack Development</div>
+                <div class="skill">Database Design</div>
+                <div class="skill">Object Oriented Programming</div>
+                <div class="skill">UI / UX Design</div>
+            </div>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="card">
+            <h2>Programming Languages</h2>
+            <div class="skills">
+                <div class="skill">C++</div>
+                <div class="skill">C</div>
+                <div class="skill">Python</div>
+                <div class="skill">Java</div>
+            </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="card">
+            <h2>Web Development</h2>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+            </div>
+        </div>
+
+    </div>
+
+    <button onclick="goBack()">Back</button>
+
+    <script>
+        function goBack(){
+            window.location.href = "first.html";
+        }
+    </script>
+
+</body>
+</html>
