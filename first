@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: linear-gradient(#0033cc, #006633);
+      text-align: center;
+      color: white;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 35px;
+      color:red;
+      letter-spacing: 2px;
+    }
+
+    /* ✅ NAV BAR FIX */
+    nav {
+      margin-top: 30px;
+      display: flex;               /* makes horizontal */
+      justify-content: center;     /* center alignment */
+      gap: 30px;                   /* space between links */
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+      text-decoration: underline;
+    }
+
+    button {
+      margin-top: 50px;
+      padding: 12px 40px;
+      font-size: 15px;
+      border: none;
+      border-radius: 30px;
+      background-color: white;
+      color: blue;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #ffeb3b;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>WELCOME TO MY PORTFOLIO</h2>
+
+  <!-- ✅ HORIZONTAL MENU -->
+ 
+<nav>
+  <a href="home.html"><h1 id="t1"></h1></a>
+  <a href="projects.html"><h1 id="t2"></h1></a>
+  <a href="achievements.html"><h1 id="t3"></h1></a>
+  <a href="skills.html"><h1 id="t4"></h1></a>
+  <a href="education.html"><h1 id="t5"></h1></a>
+  <a href="contact.html"><h1 id="t6"></h1></a>
+</nav>
+
+  <button onclick="goPage()">GO</button>
+
+  <script>
+    function goPage() {
+     document.getElementById("t1").innerText="HOME"; 
+     document.getElementById("t2").innerText="PROJECTS";
+     document.getElementById("t3").innerText="ACHIEVEMENTS"; 
+     document.getElementById("t4").innerText="SKILLS";
+     document.getElementById("t5").innerText="EDUCATION";
+     document.getElementById("t6").innerText="CONTACT";
+    }
+  </script>
+
+</body>
+</html>
