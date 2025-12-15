@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Education</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color:white;
+        }
+
+        h1{
+            text-align:center;
+            margin-top:40px;
+            letter-spacing:1px;
+        }
+
+        .underline{
+            width:70px;
+            height:4px;
+            background:#1abc9c;
+            margin:12px auto 45px;
+            border-radius:10px;
+        }
+
+        .education-container{
+            max-width:900px;
+            margin:auto;
+            padding:20px;
+        }
+
+        .edu-card{
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding:25px 30px;
+            border-radius:20px;
+            box-shadow:0 12px 30px rgba(0,0,0,0.4);
+            margin-bottom:30px;
+            transition: transform 0.3s;
+        }
+
+        .edu-card:hover{
+            transform: translateY(-8px);
+        }
+
+        .edu-card h2{
+            color:#1abc9c;
+            margin-bottom:8px;
+        }
+
+        .edu-card h3{
+            margin:5px 0;
+            font-weight:500;
+        }
+
+        .year{
+            font-size:14px;
+            opacity:0.85;
+            margin-bottom:10px;
+        }
+
+        .edu-card p{
+            line-height:1.6;
+            font-size:15px;
+        }
+
+        button{
+            margin:40px auto;
+            display:block;
+            padding:12px 30px;
+            font-size:16px;
+            border:none;
+            border-radius:30px;
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            color:white;
+            cursor:pointer;
+        }
+
+        button:hover{
+            box-shadow:0 6px 20px rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Education</h1>
+    <div class="underline"></div>
+
+    <div class="education-container">
+
+        <!-- College -->
+        <div class="edu-card">
+            <h2>Bachelor of Computer Science</h2>
+            <h3> Madras institute of Technology</h3>
+            <div class="year">2024 – 2026</div>
+            <p>
+                Studying core computer science subjects including
+                programming, data structures, operating systems,
+                database management systems, web development,
+                and basics of IoT and cloud computing.
+            </p>
+        </div>
+ <!-- Diploma -->
+        <div class="edu-card">
+            <h2>Diploma</h2>
+            <h3>Muthayammal polytechnic college</h3>
+            <div class="year">2022 – 2024</div>
+            <p>
+                Completed higher secondary education with a focus on
+                Computer Science,building a strong foundation in logical thinking.
+            </p>
+        </div>
+        <!----- Higher Secondary -->
+        <div class="edu-card">
+            <h2>Higher Secondary Education</h2>
+            <h3>Tagore Matric Higher Secondary School</h3>
+            <div class="year">2020 – 2022</div>
+            <p>
+                Completed higher secondary education with a focus on
+                Mathematics, Physics, and Computer Science,
+                building a strong foundation in logical thinking
+                and problem solving.
+            </p>
+        </div>
+
+        <!-- SSLC -->
+        <div class="edu-card">
+            <h2>Secondary School (SSLC)</h2>
+            <h3>Tagore Matric higher Secondary School</h3>
+            <div class="year">2019 – 2020</div>
+            <p>
+                Successfully completed secondary education with
+                emphasis on basic science, mathematics, and
+                computer fundamentals.
+            </p>
+        </div>
+
+    </div>
+
+    <button onclick="goBack()">Back</button>
+
+    <script>
+        function goBack(){
+            window.location.href = "first.html";
+        }
+    </script>
+
+</body>
+</html>
