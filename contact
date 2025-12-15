@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #0033cc, #00a86b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-box {
+            background: white;
+            width: 400px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #0033cc;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .info {
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 10px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            background: #0033cc;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #001f80;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contact-box">
+        <h1>Contact Me</h1>
+
+        <p>If you have any questions, project ideas, or opportunities, feel free to contact me.</p>
+
+        <p class="info">📞 Phone: <b>6382413742</b></p>
+        <p class="info">📧 Email: <b>sathishkumarsk2210@gmail.com</b></p>
+        <p class="info">📍 Location:<b> Tamil Nadu, India</b></p>
+
+        <a href="first.html">
+            <button>Back to Home</button>
+        </a>
+    </div>
+
+</body>
+</html>
