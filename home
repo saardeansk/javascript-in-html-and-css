@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title> hai da</title>
+    </head>
+    <STYLE>
+        body{
+            background-color: blue;
+        }
+        p{
+            font-size:25px;
+            color:red;
+            text-align:center;
+        }
+        button{
+            display:block;
+            margin: 35px auto;
+            font-size:20px;     
+        }
+        img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            display: block;
+            margin: 20px auto;
+}
+
+    </STYLE>
+    <body> 
+        <img src="S:\portfolio\Screenshot 2025-12-15 185637.jpg", class="responsive">
+        <script>
+            function responsive(){
+               width:"50";
+               hieght:"50";
+            }
+            function back(){
+                window.location.href="first.html";
+            }
+        </script>
+        <p>   Computer Science student with a good understanding of programming concepts. Passionate about learning and applying new technologies. Eager to work in a professional environment and enhance technical skills. <u> portfolio</u></p>
+        <button onclick="back()"; allignment="center">back</button>
+
+    </body>
+</html>
